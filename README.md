@@ -1,4 +1,4 @@
-# Science_Technology_Search
+# Science & Technology Search Engine for Sustainable Development
 Build a searchable collection of science and technology knowledge useful to implement the Sustainable Development Goals.
 
 The internet has billions of pages. This project aims to build a curated collection of content relevant to sustainable development, keeping and categorizing content from high quality sources. Such as:
@@ -33,7 +33,6 @@ In addition to being able to find content based on keywords, it would be useful 
 - By topic: health, poverty, energy, climate, water, etc.
 
 NOTE: Since the international community has agreed on the 17 Sustainable Development Goals for the year 2030, it would be ideal to have a categorization of content according to these goals as well. See the goals below:
-
 <a href="http://www.un.org/sustainabledevelopment">
     <img src="https://ict4sd.github.io/img/E_2016_SDG_Poster_all_sizes_without_UN_emblem_Letter.png" alt="SDG poster">
 </a>
