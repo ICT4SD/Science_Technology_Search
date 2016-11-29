@@ -32,13 +32,15 @@ In addition to being able to find content based on keywords, it would be useful 
 - By target audience: for children, for universtity students, for researchers, for policymakers, for practitioners, etc.
 - By topic: health, poverty, energy, climate, water, etc.
 
-NOTE: Since the international community has agreed on the 17 Sustainable Development Goals for the year 2030, it would be ideal to have a categorization of content according to these goals as well. See the goals below:
-<a href="http://www.un.org/sustainabledevelopment">
-    <img src="https://ict4sd.github.io/img/E_2016_SDG_Poster_all_sizes_without_UN_emblem_Letter.png" alt="SDG poster">
-</a>
-
 Examples
 --------
 [1) Sentence tagging and visualization](https://unite.un.org/ideas/content/links-sustainable-cities)  
 
 [2) Sentence tagging and search](https://unite.un.org/ideas/content/linkssdgs-tagger)  
+
+NOTE: Since the international community has agreed on the 17 Sustainable Development Goals for the year 2030, it would be ideal to have a categorization of content according to these goals as well. See the goals below:
+<a href="http://www.un.org/sustainabledevelopment">
+    <img src="https://ict4sd.github.io/img/E_2016_SDG_Poster_all_sizes_without_UN_emblem_Letter.png" alt="SDG poster">
+</a>
+
+
