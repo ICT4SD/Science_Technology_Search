@@ -36,3 +36,9 @@ NOTE: Since the international community has agreed on the 17 Sustainable Develop
 <a href="http://www.un.org/sustainabledevelopment">
     <img src="https://ict4sd.github.io/img/E_2016_SDG_Poster_all_sizes_without_UN_emblem_Letter.png" alt="SDG poster">
 </a>
+
+Examples
+--------
+[1) Sentence tagging and visualization](https://unite.un.org/ideas/content/links-sustainable-cities)  
+
+[2) Sentence tagging and search](https://unite.un.org/ideas/content/linkssdgs-tagger)  
