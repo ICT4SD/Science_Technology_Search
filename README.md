@@ -1,46 +1,46 @@
-# Science & Technology Search Engine for Sustainable Development
-Build a searchable collection of science and technology knowledge useful to implement the Sustainable Development Goals.
+#This branch mention some tools which can be helpful for this project
 
-The internet has billions of pages. This project aims to build a curated collection of content relevant to sustainable development, keeping and categorizing content from high quality sources. Such as:
+The examples below use Anaconda Python:
+### Install Anaconda
+wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh
+bash miniconda.sh -p miniconda
 
-- Websites, papers and publications from recognized academic institutions
-- Training materials from recognized online repositories
-- Projects and tools from civil society
-- Websites from government offices worldwide
+###Fetching URLs from Common Crawl - url_fetch_commoncrawl.py
+This shows an example of how to get URLs from common crawl. It's a wrapper for 
+the work of "ikreymer". Thanks!!  
+To get started you need a python 2.7 example.
 
-For example, if you were to search for "child nutrition tools" the results set would be expected to include for example:
-- Courses from edx.org, coursera.com, etc.
-- Papers from the World Health Organization, UNICEF, Universities, and from journals in the Directory of Open Access Journals, etc.
-- Projects from the Global Innovation Exchange, the Swedish International Development Cooperation Agency, etc.
-- Videos, web, and other materials from governmental websites around the world.
+a)Creating a new environment with Python 2.7
+conda create -n cc27 python=2.7 requests beautiful-soup  ##cc27 is just a name, choose whatever you want
+source activate cc27
 
-##Getting started
+###Clone utility to find URLs in Common Crawl See: https://github.com/ikreymer/cdx-index-client.git
+git clone https://github.com/ikreymer/cdx-index-client.git
 
-Navigating the vast amount of content abailable on the Internet is daunting, a way to get started could be to narrow the collection to include only websites belonging to this narrow list of owners:
+###Create a 'results' folder
+mkdir results
 
-- [National Goverments](http://www.un.org/en/member-states/index.html), this is a list maintained by the United Nations listing the Permanent Missions of the Member States of the United Nations.
-- [List of non-governmental organizations in consultative status with the Economic and Social Council of the United Nations](http://www.un.org/ga/search/view_doc.asp?symbol=E/2015/INF/5), this list was obtained from [here](http://csonet.org/).
-- [List of academic institutions in the United Nations Academic Impact](https://academicimpact.un.org/sites/academicimpact.un.org/files/UNAI%20MEMBERS%20LIST%20September%202016.pdf), this list was obtained from [here](https://academicimpact.un.org)
+###On url_fetch_commoncrawl.py modify the list of domain names you wish to crawl
 
-##Classification of content
+###run the url_fetch_commoncrawl.py. This will take a while, specially if you have many domains
+$ python url_fetch_commoncrawl.py
 
-In addition to being able to find content based on keywords, it would be useful to be able to narrow down search results by the type of content found. These are some ideas for classification:
 
-- By type of media: documents, videos, images, etc.
-- By category of content: training material, laws or regulations, research papers, etc.
-- By language
-- By target audience: for children, for universtity students, for researchers, for policymakers, for practitioners, etc.
-- By topic: health, poverty, energy, climate, water, etc.
+#Another tool
+Working with WARC files can be tricky, the steps below how to take the files woth URLs obtained from the Common Crawl
+can be manipulated using pandas. It uses a Python 3 environment which I called cc35:
 
-Examples
---------
-[1) Sentence tagging and visualization](https://unite.un.org/ideas/content/links-sustainable-cities)  
+###2) Creating a new conda environment with Python 3.5.
+conda create --name cc35 zlib pandas numpy beautiful-soup
 
-[2) Sentence tagging and search](https://unite.un.org/ideas/content/linkssdgs-tagger)  
+###Activating it
+source activate cc35
 
-NOTE: Since the international community has agreed on the 17 Sustainable Development Goals for the year 2030, it would be ideal to have a categorization of content according to these goals as well. See the goals below:
-<a href="http://www.un.org/sustainabledevelopment">
-    <img src="https://ict4sd.github.io/img/E_2016_SDG_Poster_all_sizes_without_UN_emblem_Letter.png" alt="SDG poster">
-</a>
+###Processing URLs obtained from the CommomCrawl
+$ python url_processing.py
 
+
+# Finally, to get to clean text extacts from the common crawl, we need to get the WET files.
+A nice example of how to get WET files see this nice blog:  
+https://dmorgan.info/posts/common-crawl-python/
 
