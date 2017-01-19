@@ -1,0 +1,20 @@
+# members of UN security council:
+(domain referred from https://en.wikipedia.org/wiki/.gov#External_links)
+# permanent members:China:France:Russian Federation:the United Kingdom:the United States:
+ ".gov.cn"
+ ".gouv.fr"
+ ".gov.ru"
+ ".gov.uk"
+ ".gov" # ?? for US
+# non-permanent members:
+Bolivia:Egypt:Ethiopia:Italy:Japan:Kazakhstan:Senegal:Sweden:Ukraine:Uruguay
+".gob.bo" 
+".gov.eg" 
+".gov.et" 
+".gov.it" 
+".go.jp"
+".gov.kz"
+".gouv.sn"
+"" ??#Sweden:
+".gov.ua"
+".gub.uy"
