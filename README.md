@@ -58,7 +58,7 @@ https://dmorgan.info/posts/common-crawl-python/
 
 From the WARC files we obtains records of this format:
 
-{"urlkey": "af,gov,afghanexperts)/", "timestamp": "20161207122240", "status": "200", "url": "http://afghanexperts.gov.af/", "filename": "crawl-data/CC-MAIN-2016-50/segments/1480698542112.77/warc/CC-MAIN-20161202170902-00193-ip-10-31-129-80.ec2.internal.warc.gz", "length": "5590", "mime": "text/html", "offset": "7633111", "digest": "OWUUY5VHCX62BY4CKETES3C7IKISLN5T"}
+    {"urlkey": "af,gov,afghanexperts)/", "timestamp": "20161207122240", "status": "200", "url": "http://afghanexperts.gov.af/", "filename": "crawl-data/CC-MAIN-2016-50/segments/1480698542112.77/warc/CC-MAIN-20161202170902-00193-ip-10-31-129-80.ec2.internal.warc.gz", "length": "5590", "mime": "text/html", "offset": "7633111", "digest": "OWUUY5VHCX62BY4CKETES3C7IKISLN5T"}
 
 The full text will be in a WET file which is located in a path which can be derived from the WARC file by:
 
@@ -67,16 +67,16 @@ The full text will be in a WET file which is located in a path which can be deri
 
 So you can download the WET file (full text) which contains the full text of the URL above ("url": "http://afghanexperts.gov.af/") with this command:
 
-$wget https://commoncrawl.s3.amazonaws.com/crawl-data/CC-MAIN-2016-50/segments/1480698542112.77/wet/CC-MAIN-20161202170902-00193-ip-10-31-129-80.ec2.internal.warc.wet.gz
+    $ wget https://commoncrawl.s3.amazonaws.com/crawl-data/CC-MAIN-2016-50/segments/1480698542112.77/wet/CC-MAIN-20161202170902-00193-ip-10-31-129-80.ec2.internal.warc.wet.gz
 
 Note that this WET file contains the full text of many more URLs so to get to your exact URL you must use the ("offset": "7633111") and  ("length": "5590") parameters when reading the file.
 
-for example in python, after having downloadd and gunzip the file:
+For example in python, after having downloadd and gunzip the file:
 
-with open('CC-MAIN-20161202170902-00193-ip-10-31-129-80.ec2.internal.warc.wet') as f:
-    # for line in f:      # uncomment these two lines to see the full text
-    #     print (line)
-    f.seek(7633111)       # use this line with the value of the offset parameter to open the file where your url is located
-    print(f.read(5590))   # this is the lenght of your full text, from the lenght parameter
+    with open('CC-MAIN-20161202170902-00193-ip-10-31-129-80.ec2.internal.warc.wet') as f:
+        # for line in f:      # uncomment these two lines to see the full text
+        #     print (line)
+        f.seek(7633111)       # use this line with the value of the offset parameter to open the file where your url is located
+        print(f.read(5590))   # this is the lenght of your full text, from the lenght parameter
     
 NOTE: the offset above is not workng properly, i believe its because the offset is valid for the compressed file. You can experiment with that.
