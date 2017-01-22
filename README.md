@@ -62,8 +62,8 @@ From the WARC files we obtains records of this format:
 
 The full text will be in a WET file which is located in a path which can be derived from the WARC file by:
 
--replacing the "/warc/" folder by "/wet/"  and by
--changing the extension of the file downloaded from "....warc.gz" to "....warc.wet.gz"
+- replacing the "/warc/" folder by "/wet/"  and by
+- changing the extension of the file downloaded from "....warc.gz" to "....warc.wet.gz"
 
 So you can download the WET file (full text) which contains the full text of the URL above ("url": "http://afghanexperts.gov.af/") with this command:
 
