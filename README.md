@@ -44,22 +44,25 @@ Examples
       "_index" : "sti_search",  
       "_type" : "site",  
       "_id" : "0",  
-      "_score" : 1.0,
-      "_source" : {
-        "Country Origin" : [ "India" ],
-        "Entity Origin" : [ "Permanent Mission to the UN", "Ministry of Foreign Affairs" ],
-        "Domain Origin" : [ ".gov.in"],
-        "Title" : [ "Analysis: What this technology means for the future of the console health" ],
-        "Content" : [ "Company co-founder and current board member is going to offload some of his stock. The CEO and is the companys largest individual shareholder, said Thursday that he plans to sell a new device for poverty reduction." ],
-        "url" : "https://example.un.org/12345",
-        "Language" : [ "English", "French" ],
-        "Resource Type" : [ "News", "Projects" ],
-        "Resource Format" : [ "Webpage", "Video" ],
-        "SDG Goal" : [ "Health", "Poverty" ],
-        "Indexed Date" : "2015-31-12"
-      }
+      "_score" : 1.0,  
+      "_source" : {  
+        "Country Origin" : [ "India" ],  
+        "Entity Origin" : [ "Permanent Mission to the UN", "Ministry of Foreign Affairs" ],  
+        "Domain Origin" : [ ".gov.in"],  
+        "Title" : [ "Analysis: What this technology means for the future of the console health" ],  
+        "Content" : [ "Company co-founder and current board member is going to offload some of his stock. The CEO and is the companys largest individual shareholder, said Thursday that he plans to sell a new device for poverty reduction." ],  
+        "url" : "https://example.un.org/12345",  
+        "Language" : [ "English", "French" ],  
+        "Resource Type" : [ "News", "Projects" ],  
+        "Resource Format" : [ "Webpage", "Video" ],  
+        "SDG Goal" : [ "Health", "Poverty" ],  
+        "Indexed Date" : "2015-31-12"  
+      }  
 
-You can see a demo interactive search engine server here: (with fake content)  http://132.148.64.70:9200/_search?pretty=true&q=*:*
+
+You can see a demo interactive search engine server here:
+(Note: fake content!!)  http://132.148.64.70:9200/_search?pretty=true&q=*:*
+
 
 
 NOTE: Since the international community has agreed on the 17 Sustainable Development Goals for the year 2030, it would be ideal to have a categorization of content according to these goals as well. See the goals below:
