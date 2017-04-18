@@ -41,9 +41,9 @@ Examples
 3) This is an example of how documents might look like in the search engine server:
 
     {
-      "_index" : "sti_search",
-      "_type" : "site",
-      "_id" : "0",
+      "_index" : "sti_search",  
+      "_type" : "site",  
+      "_id" : "0",  
       "_score" : 1.0,
       "_source" : {
         "Country Origin" : [ "India" ],
